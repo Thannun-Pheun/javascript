@@ -1,15 +1,127 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-        <label for="input">Number:</label>
-        <input type="text" id="input" placeholder="Enter a number">
-        <button onclick="number()" type="button">click me</button>
-</body>
-<script src="script.js"></script>    
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="form-box">
+                <label for="input">Number:</label>
+                <input type="text" id="input" placeholder="Enter a number" />
+                <button onclick="number()" type="button">Click Me</button>
+            </div>
+
+            <div class="form-box">
+                <label for="cinemaInput">Cinema:</label>
+                <input
+                    type="number"
+                    id="cinemaInput"
+                    placeholder="Enter an age..."
+                />
+                <button type="button" onclick="cinema()">Click Me</button>
+            </div>
+
+            <div class="form-box">
+                <label for="dayInput">Day of the week:</label>
+                <input type="number" id="dayInput" placeholder="Enter 1-7..." />
+                <button type="button" onclick="submitDay()">Click Me</button>
+            </div>
+
+            <div class="form-box">
+                <label for="drivingAgeInput">Driving age:</label>
+                <input
+                    type="number"
+                    id="drivingAgeInput"
+                    placeholder="Enter an age..."
+                />
+                <button type="button" onclick="DrivingAge()">Click Me</button>
+            </div>
+
+            <div class="form-box">
+                <label for="monthInput">Month:</label>
+                <input
+                    type="number"
+                    id="monthInput"
+                    placeholder="Enter a month (1-12)..."
+                />
+                <button type="button" onclick="Month()">Click Me</button>
+            </div>
+
+            <div class="form-box">
+                <label for="scoreInput">Score:</label>
+                <input
+                    type="number"
+                    id="scoreInput"
+                    placeholder="Enter a score (0-100)..."
+                />
+                <button type="button" onclick="Score()">Click Me</button>
+            </div>
+
+            <div class="form-box">
+                <label for="ageA">Person A age:</label>
+                <input type="number" id="ageA" placeholder="Person A age" />
+
+                <label for="ageB">Person B age:</label>
+                <input type="number" id="ageB" placeholder="Person B age" />
+
+                <button type="button" onclick="compareAges()">Click Me</button>
+            </div>
+
+            <div class="form-box">
+                <label for="username">Username:</label>
+                <input type="text" id="username" placeholder="Username..." />
+
+                <label for="password">Password:</label>
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="Password..."
+                />
+
+                <button type="submit" onclick="submitForm()">Submit</button>
+            </div>
+
+            <div class="form-box">
+                <label for="zoneInput">Shipping zone:</label>
+                <input
+                    type="number"
+                    id="zoneInput"
+                    placeholder="Zone: 1, 2 or 3"
+                />
+
+                <label for="totalInput">Order total ($):</label>
+                <input
+                    type="number"
+                    id="totalInput"
+                    placeholder="Order total ($)"
+                />
+
+                <button type="submit" onclick="calculate()">Calculate</button>
+            </div>
+
+            <div class="form-box">
+                <label for="weightInput">Weight (kg):</label>
+                <input
+                    type="number"
+                    id="weightInput"
+                    placeholder="Weight (kg)"
+                />
+
+                <label for="heightInput">Height (cm):</label>
+                <input
+                    type="number"
+                    id="heightInput"
+                    placeholder="Height (cm)"
+                />
+
+                <button type="submit" onclick="calculateBMI()">
+                    Calculate BMI
+                </button>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
 </html>
