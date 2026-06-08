@@ -216,7 +216,7 @@ function calculate() {
     console.log(finalCost);
 }
 
-function submitGrade() {
+function calculateBMI() {
     let weight = Number(document.getElementById("weightInput").value);
     let heightCm = Number(document.getElementById("heightInput").value);
 }
