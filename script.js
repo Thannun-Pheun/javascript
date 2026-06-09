@@ -219,4 +219,24 @@ function calculate() {
 function calculateBMI() {
     let weight = Number(document.getElementById("weightInput").value);
     let heightCm = Number(document.getElementById("heightInput").value);
+
+    let bmi = weight / (heightCm / 100) / (heightCm / 100);
+    let x = "";
+
+    if (bmi < 18.5) {
+        x = "Underweight";
+    } else if (bmi >= 18.5 && bmi <= 24.9) {
+        x = "Normal";
+    } else if (bmi >= 25 && bmi <= 29.9) {
+        x = "Overweight";
+    } else {
+        x = "Obese";
+    }
+
+    let y =
+        x === "Underweight" || x === "Obese"
+            ? " - See a doctor"
+            : "Normal";
+
+    console.log(`${x}${y}`);
 }
